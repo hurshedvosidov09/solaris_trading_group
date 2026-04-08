@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solaris Trading Group</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg"></div>
+
+<header class="fade">
+    <h1>Solaris Trading Group</h1>
+    <p>Вы даёте задачу — мы решаем</p>
+    <a href="#contact" class="btn">Связаться</a>
+</header>
+
+<section class="glass fade">
+    <h2>О компании</h2>
+    <p>
+    Solaris Trading Group — торговый агент.  
+    Вы даёте задачу — мы находим товар, поставщика и доставляем.
+
+    Нужно что-то купить или привезти?  
+    Свяжитесь с нами — решим быстро и выгодно.
+    </p>
+</section>
+
+<section class="fade">
+    <h2>Что мы делаем</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Поиск товаров</h3>
+            <p>Находим любой товар под ваш запрос</p>
+        </div>
+        <div class="card">
+            <h3>Поставщики</h3>
+            <p>Работаем с проверенными партнёрами</p>
+        </div>
+        <div class="card">
+            <h3>Доставка</h3>
+            <p>Организуем логистику от А до Я</p>
+        </div>
+    </div>
+</section>
+
+<section class="glass fade">
+    <h2>Как это работает</h2>
+    <p>
+    1. Вы пишете нам<br>
+    2. Мы находим решение<br>
+    3. Согласуем условия<br>
+    4. Доставляем результат
+    </p>
+</section>
+
+<section class="glass fade">
+    <h2>Почему мы</h2>
+    <ul>
+        <li>Решаем задачи под клиента</li>
+        <li>Лучшие цены</li>
+        <li>Контроль процесса</li>
+        <li>Быстрая доставка</li>
+    </ul>
+</section>
+
+<section id="contact" class="glass fade">
+    <h2>Контакты</h2>
+    <p>Есть задача? Напишите или позвоните.</p>
+
+    <p>📞 +992 92 660 20 60</p>
+    <p>📞 +992 00 788 28 11</p>
+    <p>📧 hursedvosidov51@gmail.com</p>
+
+    <a href="tel:+992926602060" class="btn">Позвонить</a>
+    <a href="tel:+992007882811" class="btn">Позвонить</a>
+    <a href="mailto:hursedvosidov51@gmail.com" class="btn">Написать</a>
+</section>
+
+<footer>
+    <p>© 2026 Silk Royal Trade</p>
+</footer>
+
+<script>
+const faders = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+    faders.forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight - 50) {
+            el.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
